@@ -1,0 +1,19 @@
+body{
+    background-image: linear-gradient(to right, #1f7ed6  , #c2d7db );
+}
+p{
+    color: rgb(107, 93, 145);
+    font-family: 'Open Sans', sans-serif;
+  }
+  .document{
+    padding: 4em;
+    font-size: 20px;
+}
+pre{
+    font-size: x-large;
+    color: rgb(14, 8, 8);
+    font-family: 'Open Sans', sans-serif;
+}
+h1{
+    font-family: 'Merriweather', serif;
+}
