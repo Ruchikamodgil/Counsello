@@ -81,9 +81,14 @@
   text-align: center;
   padding: 5%;
   }
-  
-
-
+  #chatbox{
+    background-image: linear-gradient(to bottom, #1f7ed6  , #c2d7db );
+     padding-top: 60px;
+     padding-bottom: 60px;
+  }
+.a{
+  margin-left: 6em;
+}
 
 
 
