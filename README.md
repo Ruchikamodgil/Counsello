@@ -10,3 +10,6 @@ Counsello is AI based counsellor which promotes mental health and good behaviour
 
 Main motive of this application is to provide intelligent counselling to users so that serious issues in future related to their mental health can be ignored.
 
+### UI  
+<p align="center" width="100%">
+    <img width="75%" src="https://github.com/Ruchikamodgil/Counsello/blob/main/Counsello%20design.gif">
