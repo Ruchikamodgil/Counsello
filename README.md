@@ -9,7 +9,7 @@ Initiative by ```Majestic Coders``` to promote good mental health and happiness 
 <div align="center">
 
 <a href="https://github.com/Ruchikamodgil/Counsello"><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103"></a>
-<a href="https://github.com/Ruchikamodgil/Counsello"><img src="https://img.shields.io/badge/Built%20by-developers%20%3C%2F%3E-0059b3"></a>
+<a href="https://github.com/Ruchikamodgil/Counsello"><img src="https://img.shields.io/badge/Built%20by-Majestic Coders%20%3C%2F%3E-0059b3"></a>
 <a href="https://github.com/Ruchikamodgil/Counsello"><img src="https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=yellow"></a>
 <a href="https://github.com/Ruchikamodgil/"><img src="https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?v=103"></a>
 <a href="https://github.com/Ruchikamodgil/Counsello"><img src="https://img.shields.io/badge/PRs%3F-Welcomed-blue.svg?v=103"></a>
@@ -27,6 +27,6 @@ Counsello is AI based counsellor which promotes mental health and good behaviour
 
 Main motive of this application is to provide intelligent counselling to users so that serious issues in future related to their mental health can be ignored.
 
-### UI  
+### Targeted UI  
 <p align="center" width="100%">
     <img width="75%" src="https://github.com/Ruchikamodgil/Counsello/blob/main/Counsello%20design.gif">
