@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Lato:wght@100&family=Patrick+Hand&family=Patrick+Hand+SC&display=swap');
+/*-------------------------------------------------------- GENERAL SECTION ------------------------------------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --pinkTheme: #FFC0CB;
+    --blueTheme: #79CDCD;
+
+    --handlee: 'Handlee', cursive;
+    --patrick: 'Patrick Hand', cursive;
+    --patrickSC : 'Patrick Hand SC', cursive;
+    --lato: 'Lato', sans-serif;
+}
+@keyframes transitionFade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.active a{
+    color: black!important;
+    border-top: 4px solid black!important;
+}
+.translate{
+    transform: translateX(0)!important;
+}
+/*-------------------------------------------------------- GENERAL SECTION ENDS------------------------------------------------------------------*/
+
+/*-------------------------------------------------------- HEADER SECTION STARTS------------------------------------------------------------------*/
+#header{
+    height: 19vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+#header #logo{
+    text-align: center;
+    font-size: 3rem;
+    font-style: italic;
+    font-family: var(--patrick);
+}
+#header ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#header a{
+    text-decoration: none;
+    color: #555555;
+    padding: 0.7rem;
+    font-size: 1.2rem;
+    border-top: 4px solid transparent;
+    transition:  color 0.4s;
+}
+#header li:hover a{
+    color: black;
+    border-top: 4px solid black;
+}
+#header li{
+    padding: 1rem 1rem;
+}
+#header #navToggle{
+    display: none;
+}
+/*-------------------------------------------------------- HEADER SECTION ENDS ------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------- INTRODUCTION SECTION STARTS------------------------------------------------------------------*/
+#intro{
+    background-color: var(--pinkTheme);
+    font-family: var(--patrickSC);
+    letter-spacing: 1rem;
+    height: 81vh;
+    font-size: 10rem;
+    padding-top: 8rem;
+    text-align: center;
+    animation: transitionFade 1.5s;
+}
+#intro p{
+    position: relative;
+    display: inline-block;
+}
+#intro span{
+    font-family: initial;
+    font-size: 1.3rem;
+    letter-spacing: initial;
+    position: absolute;
+}
+#intro span.above{
+    top: 2rem;
+    left: -4%;
+}
+#intro span.below{
+    bottom: 0.5rem;
+    right: -5%;
+}
+/*-------------------------------------------------------- INTRODUCTION SECTION ENDS------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------- ABOUT US SECTION STARTS------------------------------------------------------------------*/
+#about{
+    background-color: var(--blueTheme);
+    height: 81vh;
+    text-align: center;
+    animation: transitionFade 1.5s
+}
+#about .content{
+    margin: auto;
+    width: 70%;
+    padding: 5rem;
+}
+#about h1{
+    font-family: var(--patrick);
+    font-weight:100;
+    font-size: 5rem;
+    padding: 1rem;
+}
+#about p{
+    font-family: var(--handlee);
+    padding-bottom: 2rem;
+    line-height: 1.7;
+}
+#about h3{
+    color: teal;
+}
+#about span{
+    color: white;
+}
+/*-------------------------------------------------------- ABOUT US SECTION ENDS------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------  TEST SECTION STARTS------------------------------------------------------------------*/
+#test{
+    height: 81vh;
+    text-align: center;
+    animation: transitionFade 1.5s
+}
+#test h1{
+    padding: 4rem  1rem;
+    background-color: var(--blueTheme);
+    font-size: 3.5rem;
+    text-align: center;
+    font-family: var(--patrick);
+    letter-spacing: 0.7rem;
+    word-spacing: 1.5rem;
+}
+.callToAction{
+    margin-top: 10rem;
+}
+.callToAction a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 0.5rem 3rem;
+    border: 4px solid black;
+    transition: all 0.5s;
+}
+.callToAction a:hover{
+    background-color: black;
+    color: white;
+}
+/*--------------------------------------------------------  TEST SECTION ENDS------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------  CONTACT US SECTION STARTS------------------------------------------------------------------*/
+#contact{
+    background-color: var(--blueTheme);
+    height: 81vh;
+    animation: transitionFade 1.5s
+}
+#contact .content{
+    margin: auto;
+    width: 70%;
+}
+#contact h1{
+    font-family: var(--patrick);
+    font-weight:100;
+    font-size: 5rem;
+    padding: 1rem;
+    text-align: center;
+}
+#contact form{
+    width: 60%;
+    margin: auto;
+}
+#contact input, 
+#contact textarea{
+    border: none;
+    outline: none;
+    padding: 0.7rem 1rem;
+    width: 100%;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+}
+#contact input:hover,
+#contact textarea:hover{
+    outline: 3px solid teal;
+}
+/*--------------------------------------------------------  CONTACT US SECTION ENDS------------------------------------------------------------------*/
+
+@media screen and (max-width:1000px) {
+    #intro p{
+        font-size: 8rem;
+    }
+    #intro span.above{
+        left: 0;
+        top: 1rem;
+    }
+    #intro span.below{
+        bottom: 0.5rem;
+        right: -5%;
+    }
+    #header{
+        grid-template-columns: 1fr;
+    }
+    #header #logo{
+        text-align: left;
+        padding-left: 4rem;
+    }
+    #header ul{
+        justify-content: flex-end;
+        padding-right: 4rem;
+    }
+    #about .content,
+    #contact .content{
+        width: 90%;
+        padding: 4rem 0;
+    }
+    #contact form{
+        width: 70%;
+    }
+    #test h1{
+        font-size: 3rem;
+        letter-spacing: 0.5rem;
+        word-spacing: 0.5rem;
+    }
+}
+@media screen and ( max-width:720px ) {
+    #contact form{
+        width: 100%;
+    }
+    #header{
+        height: 13vh;
+    }
+    #header #navToggle{
+        display: block;
+        text-align: right;
+        padding-right: 15%;
+        font-size: 2rem;
+        cursor: pointer;
+        z-index: 100;
+    }
+    section{
+        height: 87vh!important;
+    }
+    #header{
+        grid-template-columns: 1fr 1fr;
+    }
+    #intro p{
+        font-size: 5rem;
+    }
+    #intro span.above{
+        top: 0;
+        left: -3%;
+    }
+    #intro span.below{
+        bottom: -0.6rem;
+        right: -3%;
+    }
+    #header #logo{
+        padding-left: 1rem;
+    }
+    #header #headerNav{
+        width: 30rem;
+        transform: translateX(-100%);
+        width: 100%;
+        position: absolute;
+        text-align: start;
+        padding-top: 2rem;
+        background-color: rgba(255, 255, 255, 0.91);
+        height: 100vh;
+        z-index: 99;
+        transition: all 0.4s;
+    }
+    #header #headerNav ul{
+        flex-direction: column;
+    }
+    #about .content,
+    #contact .content{
+        width: 100%;
+        padding: 4rem 1rem;
+    }
+    #test h1{
+        font-size: 3rem;
+        letter-spacing: initial;
+    }
+}
+@media screen and ( max-width: 550px ){
+    #test h1{
+        font-size: 2.5rem;
+    }
+    #intro p{
+        font-size: 4rem;
+    }
+    #intro span.below{
+        right: 0;
+    }
+}
+@media screen and ( max-width: 450px ){
+    #test h1{
+        font-size: 2rem;
+    }
+    #intro p{
+        font-size: 3rem;
+        letter-spacing: 0.3rem;
+    }
+    #intro span{
+        font-size: 0.9rem;
+    }
+    #intro span.below{
+        right: -15%;
+    }
+}
